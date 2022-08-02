@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>vKart Online Shopping Store.</title>
+    <link rel="icon" href="logo.JPG" type="image/x-icon">
+    <style>
+        body {
+            background-color: white;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/logo.JPG">vKart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html" target="_blank">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="mobile.html">Mobile</a></li>
+                            <li><a class="dropdown-item" href="grocery.html">Grocery</a></li>
+                            <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+
+                            <li><a class="dropdown-item" href="appliances.html">Appliances</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item" href="beauty.html">Beauty,Toys and more</a></li>
+                            <li><a class="dropdown-item" href="food.html">Food & Drinks</a></li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="sweet.js">Notification</a></li>
+                            <li><a class="dropdown-item" href="#">Sell on VKart</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="advertise.html" target="_blank">Advertise </a></li>
+                            <li><a class="dropdown-item" href="help1.html" target="_blank">27x7 Customer care</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to vKart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Please enter your registered Email.">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Please Enter Your Password.">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </button>
+    <!-- SignUpModal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">SignUp to vKart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Please Enter your Email Id.">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Please Enter Password.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Please Confirm Password.">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="a4.jpg" class="d-block w-100" height="600px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to Online Store</h2>
+                    <p>Here you will find daily usage each and everything.</p>
+                    <button class="btn btn-danger">Live Offers</button>
+                    <button class="btn btn-primary">Kids Section</button>
+                    <button class="btn btn-success">Travel</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="a7.jpg" class="d-block w-100" height="600px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to Best Product Store</h2>
+                    <p>Here you will find daily usage each and everything.</p>
+                    <button class="btn btn-danger">Live Offers</button>
+                    <button class="btn btn-primary">Kids Section</button>
+                    <button class="btn btn-success">Travel</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="a3.jpg" class="d-block w-100" height="600px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Award winning Store</h2>
+                    <p>Here you will find daily usage each and everything.</p>
+                    <button class="btn btn-danger">Live Offers</button>
+                    <button class="btn btn-primary">Kids Section</button>
+                    <button class="btn btn-success">Travel</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-4 mx-3" style="color: white;">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-secondary">Deals of the Day</strong>
+                        <h3 class="mb-0">Featured Items</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="a8.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-secondary">Fashion For Everyone</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+
+
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="a5.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div class="container mx-3 px-4" style="color:black;">
+        <h3>vKart: The One-stop Shopping Destination</h3>
+        <p style="text-align: alignment type;">
+            <i> E-commerce is revolutionizing the way we all shop in India.
+                Why do you want to hop from one store to another in search of the latest phone when you can find it on
+                the
+                Internet in a single click? Not only mobiles.
+                vKart houses everything you can possibly imagine, from trending electronics like laptops, tablets,
+                smartphones,
+                and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories;
+                from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life
+                easy
+                like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small
+                appliances;
+                from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments,
+                we got them all covered. You name it, and you can stay assured about finding them all here. For those of
+                you
+                with erratic working hours, vKart is your best bet.
+                Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</i>
+        </p><br>
+        <h3>Small Home Appliances</h3>
+        <p><i>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs,
+                microwave ovens, sandwich makers, hand blenders, coffee makers,
+                and many more other time-saving appliances that are truly crafted for a quicker lifestyle.
+                Live life king size with these appliances at home.</i></p><br>
+        <h3>Home and Furniture</h3>
+        <p><i>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining
+                tables, wardrobes, and TV units - it's not easy to set up everything again.
+                With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what
+                furniture will stand the test of time? These are questions you must ask before you choose a store.
+                Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind
+                the
+                modern Indian consumer but furniture that comes with a lab certification,
+                ensuring they last you for up to 10 years.</i>
+        </p><br>
+        <h3>Baby and Kids</h3>
+        <p><i> Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting
+                mother
+                or a new mother,
+                you will find everything you need to set sail on a smooth parenting journey with the help of our baby
+                care
+                collection.
+                When it comes to safety, hygiene and comfort, you can rely on us without a second thought.
+                Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business
+                for
+                your baby.</i>
+        </p><br>
+        <h3>Books, Sports and Games</h3>
+        <p><i>Work hard and no play? We don't believe in that.
+                Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English
+                and
+                Indian blockbusters,
+                most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to
+                inspire you to get moving.</i>
+        </p><br>
+        <h3>No Cost EMI</h3>
+        <p><i>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with
+                us
+                under EMI,
+                without shelling out any processing fee. Applicable on select mobiles, laptops, large and small
+                appliances,
+                furniture, electronics and watches,
+                you can now shop without burning a hole in your pocket.
+                If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look
+                ASAP! Terms and conditions apply.</i>
+
+        </p><br>
+        <h3>EMI on Debit Cards</h3>
+        <p><i>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore
+                credit card holders? After enabling EMI on Credit Cards,
+                in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit
+                Cards,
+                empowering you to shop confidently with us without having to worry about pauses in monthly cash flow.
+                At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this
+                facility. More power to all our shoppers! Terms and conditions apply.</i>
+        </p><br>
+        <h3>Mobile Phones</h3>
+        <p><i>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
+                Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+                beautification apps, high-tech selfie cameras or just large internal space,
+                we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo,
+                Xiaomi,
+                Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in
+                the
+                market.</i>
+
+        </p>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-primary text-white">
+        <!-- Section: Social media -->
+        <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+        <!--  <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div> 
+            <!-- Left -->
+
+        <!-- Right -->
+        <!-- <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </div> -->
+        <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Policy
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Return Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms Of Use</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Security</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Help
+                        </h6>
+                        <p>
+                            <a href="#!" class="">Payments</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Shipping</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cancellation & Returns</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">FAQ</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Social
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Twitter</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Youtube</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fa fa-home me-3"></i>Ayodhya, UP 224001, INDIA</p>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i>
+                            vkart@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone me-3"></i> +91 9454090909</p>
+                        <p><i class="fa fa-print me-3"></i> +91 9140131313</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="">vKart.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
